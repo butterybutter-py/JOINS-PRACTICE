@@ -1,0 +1,30 @@
+use classicmodels;
+SELECT c.customerNumber, c.customerName, e.firstName, e.lastName, e.jobTitle
+FROM customers c
+INNER JOIN employees e
+    ON c.salesRepEmployeeNumber = e.employeeNumber
+limit 10; 
+
+
+SELECT c.customerNumber, c.customerName, e.firstName, e.lastName
+FROM customers c
+LEFT JOIN employees e
+ON c.salesRepEmployeeNumber = e.employeeNumber;
+ 
+
+SELECT e.employeeNumber, e.firstName, e.lastName, c.customerName
+FROM employees e
+RIGHT JOIN customers c
+ON c.salesRepEmployeeNumber = e.employeeNumber; 
+
+SELECT c.customerNumber, c.customerName, e.employeeNumber, e.firstName, e.lastName
+FROM customers c
+LEFT JOIN employees e
+    ON c.salesRepEmployeeNumber = e.employeeNumber
+UNION
+SELECT c.customerNumber, c.customerName, e.employeeNumber, e.firstName, e.lastName
+FROM customers c
+RIGHT JOIN employees e
+    ON c.salesRepEmployeeNumber = e.employeeNumber;
+ 
+    
