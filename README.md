@@ -22,3 +22,7 @@ Alternative Tools: The task could also be executed using other database manageme
 2.Database Design and Administration: Understanding relational integrity and ensuring correct implementation of foreign key constraints.
 3.Data Preparation for BI Tools: Supplying structured datasets for visualization platforms such as Power BI, Tableau, and Excel.
 
+#output:
+
+<img width="713" height="559" alt="Image" src="https://github.com/user-attachments/assets/2dfe9a3e-2a81-45f3-aedb-7344b7fcbdb6" />
+
